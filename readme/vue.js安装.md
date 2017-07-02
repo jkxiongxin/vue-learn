@@ -26,5 +26,5 @@
 
    ![main添加element-ui依赖](./imgs/1.png)
 3. 打开根目录下的index.html文件，在head标签对中添加css依赖
-   * &lt:link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css"/&gt;
-4. 检查依赖是否成功：打开src/components目录下的Hello.vue文件，在template标签对中加入一个&lt:el-button&gt;按钮&lt:/el-button&gt;，然后在命令行输入npm run dev运行项目，访问http://localhost:8080查看是否出现了一个button按钮，如果看到则表示引入成功
+   * &lt;link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css"/&gt;
+4. 检查依赖是否成功：打开src/components目录下的Hello.vue文件，在template标签对中加入一个&lt;el-button&gt;按钮&lt;/el-button&gt;，然后在命令行输入npm run dev运行项目，访问http://localhost:8080查看是否出现了一个button按钮，如果看到则表示引入成功
