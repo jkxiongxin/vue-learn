@@ -1,7 +1,15 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+  <el-row class="tac">
+    <el-col>
+      <el-menu default-active="/" :router="true" class="el-menu-demo" mode="horizontal" theme="dark">
+        <el-menu-item index="/">首页</el-menu-item>
+        <el-menu-item index="data">双向绑定</el-menu-item>
+      </el-menu>
+    </el-col>
+    <el-col>
+      <router-view></router-view>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
@@ -17,6 +25,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body{
+  margin: 0;
 }
 </style>
