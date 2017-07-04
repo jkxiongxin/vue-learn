@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import DubleData from '@/components/DubleData'
+import Data from '@/components/Data'
 
 Vue.use(Router)
 
@@ -13,8 +13,8 @@ export default new Router({
       component: Hello
     }, {
       path: '/data',
-      name: 'DubleData',
-      component: DubleData
+      name: 'Data',
+      component: Data
     }
   ]
 })
