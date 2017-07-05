@@ -3,12 +3,16 @@
 ```shell
 mkdir mock-server1
 ```
-2.进入目录，并初始化项目，将mockserver-netty-3.10.7-jar-with-dependencies.jar文件拷贝到该目录
+2.进入目录，并初始化项目
 ```shell
 cd mock-server1
 npm init
 ```
 初始化过程一路回车就行
+代开浏览器复制链接，下载依赖包并放在mock-server1目录下
+```html
+http://search.maven.org/remotecontent?filepath=org/mock-server/mockserver-netty/3.10.8/mockserver-netty-3.10.8-jar-with-dependencies.jar
+```
 3.全局安装grunt 
 ```shell
 npm i grunt -g
