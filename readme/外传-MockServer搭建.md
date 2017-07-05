@@ -9,9 +9,15 @@ cd mock-server1
 npm init
 ```
 初始化过程一路回车就行
-代开浏览器复制链接，下载依赖包并放在mock-server1目录下
+2.1打开浏览器复制链接，下载依赖包并放在mock-server1目录下
 ```html
 http://search.maven.org/remotecontent?filepath=org/mock-server/mockserver-netty/3.10.8/mockserver-netty-3.10.8-jar-with-dependencies.jar
+```
+2.2创建忽略文件<b>.gitignore</b>(.不能少)，内容如下：
+```.gitignore
+node_modules/
+*.log
+*.jar
 ```
 3.全局安装grunt 
 ```shell
@@ -55,7 +61,11 @@ remote.mockAnyResponse({
     'delay': {
       'timeUnit': 'MILLISECONDS',
       'value': 250
-    }
+    },
+    'headers': [
+      {"name": "Content-Type", "values": ["application/json; charset=utf-8"]},
+      {"name": "Cache-Control", "values": ["no-cache, no-store"]}
+    ]
   }, 
   'times': {
     'remainingTimes': 100,

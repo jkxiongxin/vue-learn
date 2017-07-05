@@ -18,9 +18,9 @@ remote.mockAnyResponse({
       'value': 250
     },
     'headers': [
-            {"name": "Content-Type", "values": ["application/json; charset=utf-8"]},
-            {"name": "Cache-Control", "values": ["no-cache, no-store"]}
-        ]
+        {"name": "Content-Type", "values": ["application/json; charset=utf-8"]},
+        {"name": "Cache-Control", "values": ["no-cache, no-store"]}
+    ]
   }, 
   'times': {
     'remainingTimes': 100,

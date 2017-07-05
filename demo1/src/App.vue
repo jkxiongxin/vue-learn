@@ -4,6 +4,7 @@
       <el-menu default-active="/" :router="true" class="el-menu-demo" mode="horizontal" theme="dark">
         <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item index="data">双向绑定</el-menu-item>
+        <el-menu-item index="resource">resource</el-menu-item>
       </el-menu>
     </el-col>
     <el-col>
