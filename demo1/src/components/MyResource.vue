@@ -68,6 +68,23 @@ export default {
     },
     searchData(){
         console.log("进入搜索方法，搜索内容为" + this.search);
+        var params = {
+            pageSize: this.pagination.pageSize,
+            pageIndex: this.pagination.pageIndex
+        }
+        this.$http.get("/mock/users",{
+            params: params
+        }).then(
+            success => {
+                this.tableData = success.body
+            },
+            error => {
+                this.$message({
+                    type: 'error',
+                    message: '获取数据失败'
+                })
+            }
+        );
     },
     handleCurrentChange(index){
         console.log("当前页码改变为" + index);

@@ -12,7 +12,7 @@ remote.mockAnyResponse({
   }, 
   'httpResponse': {
     'statusCode': 200,
-    'body': JSON.stringify({name: '小明',age: '15'}),
+    'body': JSON.stringify([{name: '小明',age: '15'},{name:'小花',age: '15'}]),
     'delay': {
       'timeUnit': 'MILLISECONDS',
       'value': 250
