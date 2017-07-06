@@ -59,7 +59,11 @@ export default {
             }
         ]
     }
-  }, methods: {
+  }, 
+  created(){
+    this.searchData();
+  },
+  methods: {
     openUpdateDialog(index){
         console.log("修改的序号为" + index);
     },
